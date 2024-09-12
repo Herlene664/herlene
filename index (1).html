@@ -1,0 +1,221 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUSIC PLAYER</title>
+  <body style="font-size: 40px">
+    
+  <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            background-image: url("images (1).jpeg");
+            
+              padding: 8px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 0.1;
+            
+            
+            
+            
+            
+        }
+
+        h1 {
+            color: violet;
+        }
+
+        
+        #lyrics {
+          margin-bottom: 30px;
+          display: flex;
+           align-items: center; 
+            margin-top: 5px;
+            font-size: 40px;
+            flex-direction: column;
+        }
+
+        
+        line {
+            
+            color: blanchedalmond;
+            transition: opacity 0.5s ease-in-out, color 0.5s ease-in-out;
+        }
+
+        
+        .highlight {
+            color: violet;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>I WISH YOU ARE MINE</h1>
+      <p style="font-family:courier;">By: <q><i><mark>Loving Caliber Feat. Mia Niles<mark> </q></p>
+        
+    
+    
+    
+    <audio id="audioPlayer" controls>
+        <source src="I Wish You Were Mine - Loving Caliber (Lyrics)_031848.mp3" type="audio/mpeg">
+        
+    </audio>
+    
+    
+    <div id="lyrics">
+      
+       <p id="line1" class="line">I Look at you  you make me blind.</p>
+        <p id="line2" class="line">Why do you have to be so beautiful all the time</p>
+        <p id="line3" class="line">I know I can't be with you</p>
+        <p id="line4" class="line">It's killing me to see you with someone else</p>
+        <p id="line5" class="line">What to do</p>
+        
+        
+        <p id="line6" class="line">Now I'm in the corner and watching you smile'.</p>
+         <p id="line7" class="line">Watching you smile </p>
+        <p id="line8" class="line">And I can't get over'</p>
+        <p id="line9" class="line">I'm losing my mind</p>
+        
+        
+        
+        <p id="line10" class="line">All the things that I wish I could tell you</p>
+        <p id="line11" class="line">Every time when you're passing me by</p>
+        <p id="line12"  class="line">I fall inlove there's something about you</p>
+        <p id="line13"  class="line">I wish you were mine </p>
+         <p id="line14"  class="line">And if I only could be there to hold you</p>
+         <p id="line15" class="line">It feels like I stop breathing when your around</p>
+         <p id="line16" class="line">I'm in love, there's something about you</p>
+         <p id="line17" class="line">I wish you were mine</p>
+
+
+ 
+
+
+ <p id="line18" class="line">So many times I wanted to.</p>
+        <p id="line19" class="line">Put my arms around you just to be close yo you </p>
+        <p id="line20" class="line">And in my head, it's just you and I</p>
+        <p id="line21" class="line">And I don't know why I feel this way</p>
+        
+        
+        
+        <p id="line22" class="line">Now I'm in the corner watching you smile</p>
+        <p id="line23" class="line">Watching you smile, yeah</p>
+        <p id="line24" class="line">Now I can't get over you </p>
+        <p id="line25" class="line">I'm losing my mind,but</p>
+        
+        
+        
+        <p id="line26" class="line">All the things that I wish I could tell you</p>
+        <p id="line27" class="line">Every time when you're passing me by</p>
+        <p id="line28"  class="line">I fall inlove there's something about you</p>
+        <p id="line29"  class="line">I wish you were mine </p>
+         <p id="line30"  class="line">And if I only could be there to hold you</p>
+         <p id="line31" class="line">It feels like I stop breathing when your around</p>
+         <p id="line32" class="line">I'm in love, there's something about you</p>
+         <p id="line33" class="line">I wish you were mine</p>
+         
+         
+         
+         <p id="line34" class="line">I wish you were mine</p
+         <p id="line35" class="line">I wish you were mine</p>
+         <p id="line36" class="line">'Cause every time</p>
+         <p id="line37" class="line">You pass me by</p>
+         <p id="line38" class="line">I fall in love</p>
+         <p id="line39" class="line">I fall in love</p>
+         
+         
+        
+        <p id="line40" class="line">All the things that I wish I could tell you</p>
+        <p id="line41" class="line">Every time when you're passing me by</p>
+        <p id="line42"  class="line">I fall inlove there's something about you</p>
+        <p id="line43"  class="line">I wish you were mine </p>
+         <p id="line44"  class="line">And if I only could be there to hold you</p>
+         <p id="line45" class="line">It feels like I stop breathing when your around</p>
+         <p id="line46" class="line">I'm in love, there's something about you</p>
+         <p id="line47" class="line">I wish you were mine,oh</p>
+         
+         
+         
+          <p id="line48" class="line">There's something about you</p>
+         <p id="line49" class="line">I wish you were mine</p>
+         
+           
+         
+        
+    </div>
+
+    <script>
+        const lyrics = [
+          { time: 10, lineId: "line1"},
+          { time: 15, lineId: "line2" },
+          { time: 20, lineId: "line3"},
+         { time: 25, lineId: "line4"},
+         { time: 27, lineId: "line5" },
+         { time: 29, lineId: "line6"},
+         { time: 34, lineId: "line7"},
+         { time: 39, lineId: "line8"},
+         { time: 41, lineId: "line9"},
+       { time: 46, lineId: "line10" },
+       { time: 50, lineId: "line11"},
+       { time: 55, lineId: "line12"},
+        {time: 60, lineId: "line13" },
+        { time: 65, lineId: "line14"},
+       { time: 70, lineId: "line15"},
+       { time: 74, lineId: "line16"},
+          { time: 79, lineId: "line17"},
+          { time: 86, lineId: "line18"},
+         { time: 91, lineId: "line19"},
+         { time: 96, lineId: "line20" },
+         { time: 100, lineId: "line21"},
+         { time: 105, lineId: "line22"},
+         { time: 110, lineId: "line23"},
+         { time: 114, lineId: "line24"},
+       { time: 118, lineId: "line25"},
+       { time: 123, lineId: "line26"},
+       { time: 127, lineId: "line27"},
+        { time: 131, lineId: "line28"},
+        { time: 136, lineId: "line29"},
+       { time: 141, lineId: "line30"},
+       { time: 146, lineId: "line31"},
+          { time: 151, lineId: "line32"},
+          { time: 156, lineId: "line33"},
+         { time: 161, lineId: "line34"},
+         { time: 165, lineId: "line35"},
+         { time: 170, lineId: "line36"},
+         { time: 171, lineId: "line37"},
+         { time: 176, lineId: "line38"},
+         {time: 178, lineId: "line39"},
+       { time: 183, lineId: "line40"},
+       { time: 188, lineId: "line41"},
+       { time: 192, lineId: "line42"},
+        { time: 196, lineId: "line43"},
+        { time: 200, lineId: "line44"},
+       { time: 204, lineId: "line45"},
+       { time: 209, lineId: "line46"},
+        { time: 214, lineId: "line47"},
+       { time: 222, lineId: "line48"},
+       { time: 225, lineId: "line49"},
+       
+       
+        ];
+
+        const audioPlayer = document.getElementById('audioPlayer');
+
+        audioPlayer.addEventListener('timeupdate', () => {
+            const currentTime = audioPlayer.currentTime;
+
+            lyrics.forEach(lyric => {
+                const line = document.getElementById(lyric.lineId);
+                if (currentTime >= lyric.time) {
+                    line.classList.add('highlight');
+                } else {
+                    line.classList.remove('highlight');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
